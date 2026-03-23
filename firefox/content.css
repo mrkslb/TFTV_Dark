@@ -1,0 +1,868 @@
+/* =============================================
+   TFTV Dark - Greyscale dark mode for teamfortress.tv
+   All dark rules scoped under .tftv-dark
+   ============================================= */
+
+/* --- Dark theme color variables --- */
+.tftv-dark {
+  --bg-page: #1a1a1a;
+  --bg-code: #1e1e1e;
+  --bg-surface: #222;
+  --bg-elevated: #252525;
+  --bg-hover: #282828;
+  --bg-header: #2a2a2a;
+  --bg-button: #333;
+  --bg-button-hover: #3a3a3a;
+  --bg-strong: #444;
+  --bg-strong-hover: #4a4a4a;
+  --border: #333;
+  --border-strong: #444;
+  --border-accent: #555;
+  --border-muted: #2a2a2a;
+  --text-primary: #ccc;
+  --text-bright: #ddd;
+  --text-secondary: #aaa;
+  --text-muted: #888;
+  --text-faint: #777;
+  --text-dim: #666;
+  --text-ghost: #555;
+  --text-nav: #999;
+  --link: #4a9fc4;
+  --link-hover: #6bb8d9;
+}
+
+/* --- Base --- */
+.tftv-dark, .tftv-dark body {
+  background-color: var(--bg-page) !important;
+  color: var(--text-primary) !important;
+}
+
+/* --- Header --- */
+.tftv-dark .header,
+.tftv-dark .header-banner,
+.tftv-dark .header-banner-inner {
+  background-color: var(--bg-page) !important;
+}
+
+.tftv-dark .header-logo {
+  filter: brightness(0.85) !important;
+}
+
+.tftv-dark .header-nav-container,
+.tftv-dark .header-nav-container-inner {
+  background-color: var(--bg-elevated) !important;
+  border-top-color: var(--border) !important;
+}
+
+.tftv-dark .header-nav-item {
+  color: var(--text-nav) !important;
+}
+
+.tftv-dark .header-nav a {
+  color: var(--text-nav) !important;
+}
+
+.tftv-dark .header-nav-item:hover,
+.tftv-dark .header-nav-item.mod-active {
+  color: var(--text-bright) !important;
+}
+
+.tftv-dark .header-nav-item.mod-active:after,
+.tftv-dark .header-nav-item:hover:after {
+  background-color: var(--text-muted) !important;
+}
+
+.tftv-dark .header-nav-item-wrapper:before,
+.tftv-dark .header-nav-item-wrapper.mod-last:after {
+  border-color: var(--border) !important;
+}
+
+.tftv-dark .header-user-login {
+  background-color: var(--bg-button) !important;
+  color: var(--text-primary) !important;
+}
+
+.tftv-dark .header-user-login:hover {
+  background-color: var(--bg-strong) !important;
+}
+
+.tftv-dark .header-user-login:after {
+  border-color: var(--bg-strong) !important;
+}
+
+/* --- Wrapper / Main layout --- */
+.tftv-dark #wrapper {
+  background-color: var(--bg-page) !important;
+}
+
+.tftv-dark #content,
+.tftv-dark #content-container {
+  background-color: var(--bg-surface) !important;
+  border-color: var(--border) !important;
+}
+
+/* --- Sidebars --- */
+.tftv-dark #sidebar-left,
+.tftv-dark #sidebar-right {
+  background-color: var(--bg-page) !important;
+}
+
+/* --- Modules (sidebar blocks) --- */
+.tftv-dark .module {
+  background-color: var(--bg-surface) !important;
+  border-color: var(--border) !important;
+}
+
+.tftv-dark .module-header {
+  background-color: var(--bg-header) !important;
+  color: var(--text-primary) !important;
+  border-bottom-color: var(--border) !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.tftv-dark .module-item {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-secondary) !important;
+  border-bottom-color: var(--border-muted) !important;
+}
+
+.tftv-dark .module-item:hover {
+  background-color: var(--bg-header) !important;
+}
+
+.tftv-dark .module-item.mod-last {
+  border-bottom-color: var(--border) !important;
+}
+
+.tftv-dark .module-item-title,
+.tftv-dark .module-item-title-sub {
+  color: var(--text-secondary) !important;
+}
+
+.tftv-dark .module-item-count {
+  color: var(--text-dim) !important;
+}
+
+.tftv-dark .module-item-icon {
+  filter: brightness(0.8) !important;
+}
+
+.tftv-dark .module-item-status {
+  background-color: var(--text-ghost) !important;
+}
+
+.tftv-dark .module-item-status.mod-live {
+  background-color: var(--text-muted) !important;
+}
+
+.tftv-dark .module-item-status.mod-completed {
+  background-color: var(--bg-strong) !important;
+}
+
+.tftv-dark .module-item-flag {
+  filter: brightness(0.85) !important;
+}
+
+.tftv-dark .module-filter-menu {
+  background-color: var(--bg-elevated) !important;
+  color: var(--text-faint) !important;
+  border-bottom-color: var(--border) !important;
+  box-shadow: none !important;
+}
+
+.tftv-dark .tab-opt {
+  color: var(--text-faint) !important;
+}
+
+.tftv-dark .tab-opt:hover {
+  border-bottom-color: var(--text-ghost) !important;
+}
+
+.tftv-dark .tab-opt.active {
+  border-bottom-color: var(--text-nav) !important;
+  color: var(--text-primary) !important;
+}
+
+.tftv-dark .module-expand {
+  color: var(--text-ghost) !important;
+  border-top-color: var(--border) !important;
+}
+
+/* --- Homepage: Featured content --- */
+.tftv-dark #features-container {
+  background-color: var(--bg-surface) !important;
+}
+
+.tftv-dark #main-feature-caption,
+.tftv-dark .sub-feature-caption {
+  background-color: var(--bg-elevated) !important;
+  color: var(--text-nav) !important;
+  border-color: var(--border) !important;
+}
+
+.tftv-dark #main-feature-title-wrapper,
+.tftv-dark #main-feature-title {
+  color: var(--text-primary) !important;
+}
+
+.tftv-dark #main-feature-desc {
+  color: var(--text-muted) !important;
+}
+
+.tftv-dark #main-feature-mask,
+.tftv-dark .sub-feature-mask {
+  box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.4) inset !important;
+}
+
+.tftv-dark .sub-feature-title {
+  color: var(--text-secondary) !important;
+}
+
+.tftv-dark .sub-feature-caption {
+  color: var(--text-muted) !important;
+}
+
+.tftv-dark #main-feature-count {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: var(--text-primary) !important;
+}
+
+/* --- Homepage: Article list / News --- */
+.tftv-dark #article-list {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-secondary) !important;
+}
+
+.tftv-dark #article-list a {
+  color: var(--text-secondary) !important;
+}
+
+.tftv-dark #article-list li {
+  border-bottom-color: var(--border) !important;
+}
+
+.tftv-dark #article-list li:hover .news-item-title {
+  color: var(--text-bright) !important;
+}
+
+.tftv-dark .news-item-title {
+  color: var(--text-secondary) !important;
+}
+
+.tftv-dark .news-item-meta {
+  color: var(--text-dim) !important;
+}
+
+.tftv-dark .news-item-count {
+  background: var(--bg-strong) !important;
+  color: var(--text-secondary) !important;
+}
+
+.tftv-dark .news-item-count-num {
+  color: var(--text-primary) !important;
+}
+
+.tftv-dark .news-item-txt-container {
+  color: var(--text-secondary) !important;
+}
+
+/* --- Homepage: Schedule / Calendar --- */
+.tftv-dark #h-s-header {
+  background: var(--bg-header) !important;
+  color: var(--text-primary) !important;
+  text-shadow: none !important;
+}
+
+.tftv-dark #h-s-header a {
+  color: var(--text-primary) !important;
+}
+
+.tftv-dark #no-events {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-faint) !important;
+  border-color: var(--border) !important;
+}
+
+/* --- Tables (schedule, list-table) --- */
+.tftv-dark .list-table {
+  color: var(--text-nav) !important;
+  border-color: var(--border) !important;
+}
+
+.tftv-dark .list-table th,
+.tftv-dark th {
+  background: var(--bg-header) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border) !important;
+}
+
+.tftv-dark .list-table td,
+.tftv-dark td {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-secondary) !important;
+  border-color: var(--border) !important;
+}
+
+.tftv-dark .list-table tr:last-child td {
+  border-bottom-color: var(--border) !important;
+}
+
+.tftv-dark table {
+  border-color: var(--border) !important;
+}
+
+.tftv-dark #schedule-table td img {
+  background: var(--bg-elevated) !important;
+}
+
+.tftv-dark #schedule-table td img:hover {
+  background: var(--bg-elevated) !important;
+  box-shadow: 0 0 1px 1px var(--border-strong) !important;
+}
+
+/* --- Thread list --- */
+.tftv-dark #thread-list {
+  background-color: var(--bg-surface) !important;
+}
+
+.tftv-dark .thread {
+  background-color: var(--bg-surface) !important;
+  border-color: var(--border) !important;
+}
+
+.tftv-dark .thread:hover {
+  background-color: var(--bg-hover) !important;
+}
+
+.tftv-dark .thread-inner {
+  border-color: var(--border) !important;
+}
+
+.tftv-dark .thread .title {
+  color: var(--link) !important;
+}
+
+.tftv-dark .thread .title:hover {
+  color: var(--link-hover) !important;
+}
+
+.tftv-dark .thread .description {
+  color: var(--text-faint) !important;
+}
+
+.tftv-dark .thread .description a {
+  color: var(--link) !important;
+}
+
+.tftv-dark .thread .blockr {
+  color: var(--text-faint) !important;
+}
+
+.tftv-dark .thread .blockr a {
+  color: var(--link) !important;
+}
+
+.tftv-dark .thread .block {
+  border-color: var(--border) !important;
+}
+
+.tftv-dark .thread .tag.stickied,
+.tftv-dark .thread .tag {
+  background-color: var(--bg-button) !important;
+  color: var(--text-secondary) !important;
+  border-color: var(--border-strong) !important;
+}
+
+.tftv-dark .thread-pages,
+.tftv-dark .thread-pages-hidden {
+  color: var(--link) !important;
+}
+
+.tftv-dark .post-count {
+  color: var(--text-muted) !important;
+}
+
+.tftv-dark .frag-count {
+  color: var(--text-faint) !important;
+}
+
+.tftv-dark .block.frag.plused .frag-count {
+  color: #6c936f !important;
+}
+
+.tftv-dark .block.frag.minused .frag-count {
+  color: #b38080 !important;
+}
+
+.tftv-dark .frag-btn {
+  color: var(--text-ghost) !important;
+}
+
+.tftv-dark .frag-btn:hover {
+  color: var(--text-secondary) !important;
+}
+
+.tftv-dark .frag-container {
+  border-color: var(--border) !important;
+}
+
+/* --- Forum thread view (posts) --- */
+.tftv-dark .post {
+  background-color: var(--bg-surface) !important;
+  border-color: var(--border) !important;
+}
+
+.tftv-dark .post-header {
+  background-color: var(--bg-header) !important;
+  color: var(--text-secondary) !important;
+  border-color: var(--border) !important;
+}
+
+.tftv-dark .post-body {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-primary) !important;
+}
+
+.tftv-dark .post-footer {
+  background-color: var(--bg-surface) !important;
+  border-color: var(--border) !important;
+}
+
+.tftv-dark .post-author {
+  color: var(--text-secondary) !important;
+}
+
+.tftv-dark .post-date {
+  color: var(--text-dim) !important;
+}
+
+/* --- Quote blocks inside posts --- */
+.tftv-dark .post-body q {
+  background-color: var(--bg-header) !important;
+  color: var(--text-secondary) !important;
+  border-color: var(--border-accent) !important;
+}
+
+.tftv-dark .post-body .quote-attr {
+  color: var(--text-nav) !important;
+}
+
+/* --- Post form / reply editor --- */
+.tftv-dark #post-form,
+.tftv-dark #post-form-block {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-muted) !important;
+}
+
+.tftv-dark #post-form-header {
+  background-color: var(--bg-surface) !important;
+  border-bottom-color: var(--border-strong) !important;
+}
+
+.tftv-dark #post-form-header .tab {
+  color: var(--text-muted) !important;
+}
+
+.tftv-dark #post-form-header .tab.active {
+  background-color: var(--bg-header) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-strong) !important;
+}
+
+.tftv-dark #post-form-header a i {
+  color: var(--text-faint) !important;
+}
+
+.tftv-dark #post-form textarea {
+  background-color: var(--bg-header) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-strong) !important;
+}
+
+.tftv-dark #post-form-preview {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-primary) !important;
+}
+
+/* --- Toolbar buttons --- */
+.tftv-dark .btn, .tftv-dark a.btn {
+  background-color: var(--bg-button) !important;
+  color: var(--text-secondary) !important;
+  border-color: var(--border-strong) !important;
+  box-shadow: none !important;
+}
+
+.tftv-dark .btn:not(.mod-active):hover {
+  background-color: var(--bg-button-hover) !important;
+  color: var(--text-primary) !important;
+}
+
+.tftv-dark .btn:not(.mod-active):active,
+.tftv-dark .btn.is-clicked {
+  background-color: var(--bg-header) !important;
+}
+
+.tftv-dark .btn.mod-active {
+  background-color: var(--bg-header) !important;
+  box-shadow: 0 0 0 1px var(--border-strong) !important;
+}
+
+.tftv-dark .btn.mod-action,
+.tftv-dark a.btn.mod-action,
+.tftv-dark input.btn.mod-action,
+.tftv-dark li.btn.mod-action {
+  background-color: var(--bg-strong) !important;
+  color: var(--text-bright) !important;
+  border-color: var(--border-accent) !important;
+  box-shadow: none !important;
+}
+
+.tftv-dark .btn.mod-action:hover,
+.tftv-dark a.btn.mod-action:hover,
+.tftv-dark li.btn.mod-action:hover {
+  background-color: var(--bg-strong-hover) !important;
+}
+
+/* --- Post editor toolbar --- */
+.tftv-dark #post-editor {
+  background-color: var(--bg-surface) !important;
+  border-color: var(--border-strong) !important;
+}
+
+.tftv-dark #post-editor-header,
+.tftv-dark #post-editor-header li:not(.mod-action) {
+  background-color: var(--bg-header) !important;
+  color: var(--text-muted) !important;
+}
+
+.tftv-dark #post-editor-header li:not(.mod-action):hover {
+  background-color: var(--bg-button) !important;
+  color: var(--text-primary) !important;
+}
+
+.tftv-dark #post-editor-header-preview,
+.tftv-dark #post-editor-header-edit {
+  background: #444 !important;
+  color: #ddd !important;
+  border-color: #555 !important;
+}
+
+.tftv-dark #post-editor-header-preview:hover,
+.tftv-dark #post-editor-header-edit:hover {
+  background: #4a4a4a !important;
+}
+
+/* --- Pagination --- */
+.tftv-dark .page-nav {
+  background-color: var(--bg-surface) !important;
+}
+
+.tftv-dark .page-nav a {
+  color: var(--text-nav) !important;
+}
+
+.tftv-dark .page-nav .active {
+  background-color: var(--bg-button) !important;
+  color: var(--text-bright) !important;
+}
+
+/* --- Forms / Inputs --- */
+.tftv-dark input, .tftv-dark textarea, .tftv-dark select {
+  background-color: var(--bg-header) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-strong) !important;
+}
+
+/* --- Buttons --- */
+.tftv-dark button, .tftv-dark input[type="submit"] {
+  background-color: var(--bg-button) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-strong) !important;
+}
+
+.tftv-dark button:hover, .tftv-dark input[type="submit"]:hover {
+  background-color: var(--bg-button-hover) !important;
+}
+
+/* --- Thread frag buttons --- */
+.tftv-dark .thread-frag-btn {
+  background-color: var(--bg-button) !important;
+  border-color: var(--border-strong) !important;
+  color: var(--text-secondary) !important;
+}
+
+.tftv-dark .thread-frag-btn:hover {
+  background-color: var(--bg-button-hover) !important;
+}
+
+.tftv-dark #thread-frag-count {
+  background-color: var(--bg-strong) !important;
+  color: var(--text-primary) !important;
+}
+
+/* --- Links --- */
+.tftv-dark a:link, .tftv-dark a:visited, .tftv-dark a:active {
+  color: var(--link) !important;
+}
+
+.tftv-dark a:hover {
+  color: var(--link-hover) !important;
+}
+
+/* --- Blockquotes --- */
+.tftv-dark blockquote {
+  background-color: var(--bg-header) !important;
+  border-left-color: var(--border-strong) !important;
+  color: var(--text-secondary) !important;
+}
+
+/* --- Code blocks --- */
+.tftv-dark pre, .tftv-dark code {
+  background-color: var(--bg-code) !important;
+  color: var(--text-secondary) !important;
+}
+
+/* --- Footer --- */
+.tftv-dark footer, .tftv-dark .footer {
+  background-color: var(--bg-page) !important;
+  color: var(--text-dim) !important;
+}
+
+.tftv-dark footer a, .tftv-dark .footer a {
+  color: var(--text-muted) !important;
+}
+
+/* --- Scrollbar (Firefox) --- */
+.tftv-dark * {
+  scrollbar-color: var(--border-strong) var(--bg-page);
+}
+
+/* --- Catch-all: any remaining white/light backgrounds --- */
+.tftv-dark #wrapper * {
+  border-color: var(--border) !important;
+}
+
+/* Override inline styles on stream module titles */
+.tftv-dark .module-item-title[style] {
+  color: var(--text-muted) !important;
+}
+
+/* --- Gallery page --- */
+.tftv-dark .gallery-block-wrapper,
+.tftv-dark .gallery-block {
+  background-color: var(--bg-surface) !important;
+  color: var(--text-secondary) !important;
+}
+
+.tftv-dark .gallery-info {
+  background-color: var(--bg-header) !important;
+  color: var(--text-nav) !important;
+}
+
+.tftv-dark .gallery-name {
+  color: var(--text-primary) !important;
+}
+
+/* --- Ad wrappers / misc containers --- */
+.tftv-dark #aw {
+  background-color: var(--bg-page) !important;
+}
+
+.tftv-dark .bau, .tftv-dark .sau {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* --- Ads (hide for cleaner look) --- */
+[id*="nitro"],
+[class*="nitro"] {
+  display: none !important;
+}
+
+/* --- Widen pages column to fit last page button --- */
+.blockr.pages {
+  width: 168px !important;
+}
+
+/* --- Last page button --- */
+.tftv-last-page {
+  display: inline-block !important;
+  margin-left: 4px !important;
+  padding: 0 3px !important;
+  font-size: 8px !important;
+  font-weight: normal !important;
+  text-transform: uppercase !important;
+  border-radius: 2px !important;
+  background: #e8e8e8 !important;
+  color: #555 !important;
+  border: 1px solid #ccc !important;
+  vertical-align: baseline !important;
+  line-height: 12px !important;
+}
+
+.tftv-last-page:hover {
+  background: #ddd !important;
+  color: #333 !important;
+}
+
+.tftv-dark .tftv-last-page {
+  background: var(--bg-button) !important;
+  color: var(--text-secondary) !important;
+  border-color: var(--border-strong) !important;
+}
+
+.tftv-dark .tftv-last-page:hover {
+  background: var(--bg-button-hover) !important;
+  color: var(--text-primary) !important;
+}
+
+/* =============================================
+   Control panel (above Live Streams in sidebar)
+   ============================================= */
+/* Nav panel: hidden by default, shown in threads-only mode */
+.tftv-controls-nav {
+  display: none !important;
+}
+
+.tftv-threads-only .tftv-controls-nav {
+  display: flex !important;
+  align-items: center !important;
+  margin-left: auto !important;
+}
+
+.tftv-controls-nav .tftv-controls-buttons {
+  display: flex !important;
+  gap: 4px !important;
+  padding: 6px 8px !important;
+}
+
+/* Sidebar panel */
+.tftv-controls-sidebar {
+  margin-bottom: 3px !important;
+}
+
+.tftv-controls {
+  margin-bottom: 3px !important;
+}
+
+.tftv-controls-header {
+  font-size: 11px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  padding: 6px 12px !important;
+  display: block !important;
+}
+
+.tftv-controls-buttons {
+  padding: 6px 8px !important;
+  display: flex !important;
+  gap: 4px !important;
+}
+
+.tftv-ctrl-btn {
+  flex: 1 !important;
+  cursor: pointer !important;
+  font-size: 10px !important;
+  text-align: center !important;
+  padding: 5px 4px !important;
+  border: 1px solid #b4b4b4 !important;
+  border-radius: 2px !important;
+  background: #f9f9f9 !important;
+  color: #666 !important;
+  font-family: Arial, sans-serif !important;
+  box-shadow: none !important;
+}
+
+.tftv-ctrl-btn:hover {
+  background: #eee !important;
+}
+
+.tftv-ctrl-btn.tftv-active {
+  background: #ddd !important;
+  color: #333 !important;
+  font-weight: bold !important;
+  border-color: #999 !important;
+}
+
+/* Dark mode overrides for control panel */
+.tftv-dark .tftv-ctrl-btn {
+  background: var(--bg-button) !important;
+  color: var(--text-secondary) !important;
+  border-color: var(--border-strong) !important;
+}
+
+.tftv-dark .tftv-ctrl-btn:hover {
+  background: var(--bg-button-hover) !important;
+  color: var(--text-primary) !important;
+}
+
+.tftv-dark .tftv-ctrl-btn.tftv-active {
+  background: var(--bg-strong) !important;
+  color: var(--text-bright) !important;
+  border-color: var(--text-dim) !important;
+}
+
+/* =============================================
+   Threads-only mode
+   ============================================= */
+
+/* Hide all nav links except Threads and the nav control panel */
+.tftv-threads-only .header-nav-item-wrapper {
+  display: none !important;
+}
+
+.tftv-threads-only .header-nav-item-wrapper[href="/threads"] {
+  display: block !important;
+}
+
+.tftv-threads-only .header-nav {
+  display: flex !important;
+  justify-content: flex-end !important;
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+.tftv-threads-only #sidebar-left,
+.tftv-threads-only #sidebar-right,
+.tftv-threads-only .header-banner,
+.tftv-threads-only footer,
+.tftv-threads-only .footer {
+  display: none !important;
+}
+
+.tftv-threads-only #content,
+.tftv-threads-only #thread-list {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.tftv-threads-only #wrapper {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+}
+
+/* On homepage, hide everything except recent discussion */
+.tftv-threads-only #features-container,
+.tftv-threads-only #article-list,
+.tftv-threads-only .list-table,
+.tftv-threads-only #h-s-header {
+  display: none !important;
+}
+
+.tftv-threads-only .module {
+  display: none !important;
+}
+
+.tftv-threads-only #sidebar-left .module:last-child {
+  display: block !important;
+  width: 100% !important;
+  max-width: 900px !important;
+}
+
+/* On threads page, keep thread list visible */
+.tftv-threads-only #thread-list {
+  display: block !important;
+}

@@ -1,0 +1,6 @@
+store-notes.txt
+.DS_Store
+Thumbs.db
+*.zip
+*.xpi
+*.crx

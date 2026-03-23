@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "TFTV Dark",
+  "version": "1.0",
+  "description": "Dark mode and threads-only view for teamfortress.tv",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["nerdstars/*.gif"],
+      "matches": ["*://www.teamfortress.tv/*", "*://teamfortress.tv/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["nerdstars/*.gif"],
+      "matches": ["*://www.teamfortress.tv/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.teamfortress.tv/*", "*://teamfortress.tv/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
