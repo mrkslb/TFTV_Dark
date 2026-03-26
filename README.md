@@ -20,8 +20,8 @@ A browser extension that adds dark mode and a "Threads Only" mode to [teamfortre
 
 ## Installation
 
-- **Firefox** — [Install from Firefox Add-ons](#) *(link coming soon)*
-- **Chrome** — [Install from Chrome Web Store](#) *(link coming soon)*
+- **Firefox** — [Install from Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/tftv-dark/)
+- **Chrome** — [Install from Chrome Web Store](https://chromewebstore.google.com/detail/tftv-dark/abfdlgkohaglllkhfkgkmpgeknclcepi)
 
 ## Usage
 
